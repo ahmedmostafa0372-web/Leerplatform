@@ -1,0 +1,154 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Geschiedenis/UI/Geschiedenis.uss?fileID=7433441132597879392&amp;guid=4d9aa520c5028a84ba6e0e52abfaa3df&amp;type=3#Geschiedenis"/>
+    <ui:VisualElement name="app" class="app">
+        <ui:VisualElement name="sidebar" class="sidebar">
+            <ui:Label text="▣  LeerPlatform" class="brand"/>
+            <ui:VisualElement class="nav-list">
+                <ui:Label text="⌂  Home" class="nav-item"/>
+                <ui:Label text="✎  Oefenen" class="nav-item nav-active"/>
+                <ui:Label text="▥  Voortgang" class="nav-item"/>
+                <ui:Label text="▤  Vakken" class="nav-item"/>
+            </ui:VisualElement>
+            <ui:Label text="▤  Geschiedenis  ▾" class="subject"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="main">
+            <ui:VisualElement class="topbar">
+                <ui:Button name="sidebar-toggle" text="☰" class="icon-button"/>
+                <ui:VisualElement class="stepper">
+                    <ui:VisualElement class="step">
+                        <ui:Label name="step-1-circle" text="1" class="step-circle current"/>
+                        <ui:Label text="Bron verkennen" class="step-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="step-line"/>
+                    <ui:VisualElement class="step">
+                        <ui:Label name="step-2-circle" text="2" class="step-circle"/>
+                        <ui:Label text="Selecteren" class="step-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="step-line"/>
+                    <ui:VisualElement class="step">
+                        <ui:Label name="step-3-circle" text="3" class="step-circle"/>
+                        <ui:Label text="Antwoord" class="step-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="step-line"/>
+                    <ui:VisualElement class="step">
+                        <ui:Label name="step-4-circle" text="4" class="step-circle"/>
+                        <ui:Label text="Feedback" class="step-label"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="screen-source" class="screen">
+                <ui:VisualElement class="heading">
+                    <ui:Label text="Ontdek de bron" class="page-title"/>
+                    <ui:Label text="Lees de context en bekijk de bron zorgvuldig." class="page-subtitle"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="source-layout">
+                    <ui:VisualElement class="context-card card">
+                        <ui:Label text="▤  Historische context" class="card-title"/>
+                        <ui:Label name="historical-context" text="In de zestiende eeuw ontstond in Europa de Reformatie. Verschillende hervormers hadden kritiek op de katholieke kerk en wilden het christelijk geloof veranderen. Maarten Luther was een van de belangrijkste hervormers. Ook Johannes Calvijn speelde een belangrijke rol in de protestantse beweging.&#10;&#10;De hervormers kregen tegenstand van de katholieke kerk en van machthebbers die de bestaande godsdienstige orde wilden behouden. Hoewel Luther en Calvijn allebei tot de Reformatie behoorden, waren de protestantse hervormers het niet altijd met elkaar eens." class="body-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="source-column">
+                        <ui:ScrollView name="source-container" mode="Vertical" class="source-card card">
+                            <ui:VisualElement name="source-items">
+                                <ui:Label name="source-content" text="In 1544 schrijft de hervormer Calvijn aan de protestantse theoloog Heinrich Bullinger:&#10;&#10;Ik hoor dat Luther ten slotte niet alleen op u, maar op ons allemaal vreselijk heeft gescholden. Het is een treurig verschijnsel, dat wij, die met weinigen zijn, en aan alle kanten door vijanden worden belaagd, door een strijd in eigen groep tegenover elkaar staan. Dit kon niet op een ongelegener moment komen. (…) Luther heeft een mateloos, gewelddadig en koppig karakter. En hij heeft Von Amsdorf tot raadgever, een volslagen krankzinnige en roemloze man, door wie hij zich laat meeslepen." class="source-text"/>
+                            </ui:VisualElement>
+                        </ui:ScrollView>
+                        <ui:VisualElement class="description-card card">
+                            <ui:Label text="▤" class="description-icon"/>
+                            <ui:VisualElement>
+                                <ui:Label text="Bronbeschrijving" class="description-title"/>
+                                <ui:Label name="source-description" text="Brief van Johannes Calvijn aan Heinrich Bullinger, 1544." class="description-text"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="footer">
+                    <ui:VisualElement class="footer-spacer"/>
+                    <ui:Button name="next-source" text="Ga verder  →" class="primary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="screen-observations" class="screen hidden">
+                <ui:VisualElement class="heading">
+                    <ui:Label text="Jouw observaties" class="page-title"/>
+                    <ui:Label text="Wat valt je op aan deze bron? Schrijf op wat je ziet, denkt of opmerkt. Druk op Enter om een nieuwe observatie toe te voegen." class="page-subtitle"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="work-layout">
+                    <ui:ScrollView name="observation-source-container" mode="Vertical" class="preview-card card">
+                        <ui:VisualElement name="observation-source-items">
+                            <ui:Label name="observation-source" text="In 1544 schrijft de hervormer Calvijn aan de protestantse theoloog Heinrich Bullinger:&#10;&#10;Ik hoor dat Luther ten slotte niet alleen op u, maar op ons allemaal vreselijk heeft gescholden. Het is een treurig verschijnsel, dat wij, die met weinigen zijn, en aan alle kanten door vijanden worden belaagd, door een strijd in eigen groep tegenover elkaar staan. Dit kon niet op een ongelegener moment komen. (…) Luther heeft een mateloos, gewelddadig en koppig karakter. En hij heeft Von Amsdorf tot raadgever, een volslagen krankzinnige en roemloze man, door wie hij zich laat meeslepen." class="source-text"/>
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                    <ui:VisualElement class="work-column">
+                        <ui:VisualElement class="input-row">
+                            <ui:TextField name="observation-input" class="observation-input"/>
+                            <ui:Button name="add-observation" text="+" class="primary-button add-button"/>
+                        </ui:VisualElement>
+                        <ui:ScrollView name="observations-list" mode="Vertical" class="observation-list"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="footer">
+                    <ui:Label text="Enter = nieuwe observatie" class="hint"/>
+                    <ui:Button name="next-observations" text="Vraag ontdekken  →" class="primary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="screen-select" class="screen hidden">
+                <ui:VisualElement class="heading">
+                    <ui:Label text="De historische vraag" class="page-title"/>
+                    <ui:Label text="Selecteer de observaties die je wilt gebruiken voor je antwoord." class="page-subtitle"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="work-layout">
+                    <ui:ScrollView name="select-source-container" mode="Vertical" class="preview-card card">
+                        <ui:VisualElement name="select-source-items">
+                            <ui:Label name="select-source" text="In 1544 schrijft de hervormer Calvijn aan de protestantse theoloog Heinrich Bullinger:&#10;&#10;Ik hoor dat Luther ten slotte niet alleen op u, maar op ons allemaal vreselijk heeft gescholden. Het is een treurig verschijnsel, dat wij, die met weinigen zijn, en aan alle kanten door vijanden worden belaagd, door een strijd in eigen groep tegenover elkaar staan. Dit kon niet op een ongelegener moment komen. (…) Luther heeft een mateloos, gewelddadig en koppig karakter. En hij heeft Von Amsdorf tot raadgever, een volslagen krankzinnige en roemloze man, door wie hij zich laat meeslepen." class="source-text"/>
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                    <ui:VisualElement class="work-column">
+                        <ui:VisualElement class="question-card card">
+                            <ui:Label text="Vraag" class="card-title"/>
+                            <ui:Label name="history-question" text="Toon aan dat Calvijn een gekleurd beeld schetst van Luther en dat de verspreiding van de Reformatie gevaar loopt. Ondersteun je antwoord met de bron." class="question-text"/>
+                        </ui:VisualElement>
+                        <ui:Label text="Jouw observaties (kies er meerdere)" class="card-title"/>
+                        <ui:ScrollView name="selection-list" mode="Vertical" class="observation-list"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="footer">
+                    <ui:Button name="back-select" text="←  Vorige" class="text-button"/>
+                    <ui:Button name="next-select" text="Antwoord formuleren  →" class="primary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="screen-answer" class="screen hidden">
+                <ui:VisualElement class="heading">
+                    <ui:Label text="Geef je antwoord" class="page-title"/>
+                    <ui:Label text="Gebruik de gekozen observaties en de historische context. Formuleer een onderbouwd antwoord op de vraag." class="page-subtitle"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="work-layout">
+                    <ui:VisualElement class="selected-card card">
+                        <ui:Label text="Gekozen observaties" class="card-title"/>
+                        <ui:ScrollView name="chosen-list" mode="Vertical"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="work-column">
+                        <ui:TextField name="answer-input" multiline="true" class="answer-input"/>
+                        <ui:Label text="Schrijf hier je antwoord." class="hint"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="footer">
+                    <ui:Button name="back-answer" text="←  Vorige" class="text-button"/>
+                    <ui:Button name="submit-answer" text="Inleveren  ✓" class="primary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="screen-feedback" class="screen hidden">
+                <ui:VisualElement class="heading">
+                    <ui:Label text="Feedback" class="page-title"/>
+                    <ui:Label text="Bekijk de beoordeling van je antwoord." class="page-subtitle"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="card feedback-card">
+                    <ui:Label name="feedback-status" text="Beoordeling volgt" class="card-title"/>
+                    <ui:Label name="feedback-text" text="Hier komt de feedback van Falco&apos;s LLM. Voorlopig is dit een placeholder." class="body-text"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="footer">
+                    <ui:Button name="back-feedback" text="←  Antwoord aanpassen" class="text-button"/>
+                    <ui:Button name="retry-button" text="Opnieuw proberen  →" class="primary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
