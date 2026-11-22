@@ -101,3 +101,70 @@
 .answer-input { flex-grow: 1; font-size: 17px; }
 .hint { font-size: 13px; color: rgb(78,92,111); margin-top: 8px; }
 .feedback-card { background-color: rgb(220,239,253); padding: 24px; flex-grow: 1; }
+
+/* Observatiekaarten op de selectiepagina */
+
+.selection-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: 42px;
+    margin-bottom: 5px;
+    padding: 7px 12px;
+
+    background-color: #E6F2FF;
+
+    border-width: 1px;
+    border-color: #BED6F0;
+    border-radius: 9px;
+
+    -unity-text-align: middle-left;
+}
+
+/* Geselecteerd kaartje */
+
+.selection-card-selected {
+    background-color: #DCEEFF;
+    border-color: #A9C9EF;
+}
+
+/* Checkbox */
+
+.selection-checkbox {
+    width: 19px;
+    height: 19px;
+    min-width: 19px;
+
+    margin-right: 12px;
+
+    background-color: #F8FBFF;
+
+    border-width: 1px;
+    border-color: #9EACC0;
+    border-radius: 4px;
+
+    color: white;
+    font-size: 15px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+/* Aangevinkte checkbox */
+
+.selection-checkbox-selected {
+    background-color: #4678E8;
+    border-color: #4678E8;
+}
+
+/* Observatietekst */
+
+.selection-text {
+    flex-grow: 1;
+    white-space: normal;
+
+    color: #202A3A;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}

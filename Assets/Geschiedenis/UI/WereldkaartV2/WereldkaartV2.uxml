@@ -1,0 +1,122 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Geschiedenis/Resources/WorldMap/WorldMapStyle.uss?fileID=7433441132597879392&amp;guid=078e38e5189c18847af88a8b2d355577&amp;type=3#WorldMapStyle"/>
+    <ui:VisualElement name="world-app" class="world-app">
+        <ui:VisualElement class="sidebar">
+            <ui:VisualElement class="brand-row">
+                <ui:Label text="◈" class="brand-icon"/>
+                <ui:Label text="LeerPlatform" class="brand-text"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="nav-block">
+                <ui:Label text="⌂    Home" class="nav-item"/>
+                <ui:Label text="◎    Verover de Wereld" class="nav-item nav-active"/>
+                <ui:Label text="▥    Voortgang" class="nav-item"/>
+                <ui:Label text="▣    Vakken" class="nav-item"/>
+            </ui:VisualElement>
+            <ui:Label text="▤   Geschiedenis  ﹀" class="subject-label"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="world-main">
+            <ui:VisualElement class="header-row">
+                <ui:VisualElement class="header-copy">
+                    <ui:Label text="GESCHIEDENIS" class="eyebrow"/>
+                    <ui:Label text="Verover de Wereld" class="main-title"/>
+                    <ui:Label text="Beantwoord historische vragen, ontgrendel gebieden en vergroot jouw rijk." class="subtitle"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="progress-panel">
+                    <ui:VisualElement class="progress-top">
+                        <ui:Label text="◎" class="progress-icon"/>
+                        <ui:Label name="progress-value" text="0%" class="progress-number"/>
+                        <ui:Label text="van de wereld vrijgespeeld" class="progress-description"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="progress-track">
+                        <ui:VisualElement name="progress-fill" class="progress-fill"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="content-row">
+                <ui:VisualElement class="map-column">
+                    <ui:VisualElement name="map-frame" class="map-frame">
+                        <ui:VisualElement name="map-surface" class="map-surface">
+                            <ui:VisualElement name="map-base" class="map-base"/>
+                            <ui:VisualElement name="map-highlight" class="map-highlight"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="region-popup" class="region-popup hidden">
+                            <ui:Label name="popup-name" text="Frankrijk" class="popup-name"/>
+                            <ui:Label name="popup-topic" text="▤  De Franse Revolutie" class="popup-topic"/>
+                            <ui:Button name="start-question" text="Beantwoord de vraag  →" class="start-button"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="map-legend">
+                        <ui:VisualElement class="legend-blue"/>
+                        <ui:Label text="Ontgrendeld" class="legend-text"/>
+                        <ui:VisualElement class="legend-gray"/>
+                        <ui:Label text="Vergrendeld" class="legend-text"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard">
+                    <ui:Label text="♛  Wereldveroveraars" class="leader-title"/>
+                    <ui:VisualElement class="leader-row">
+                        <ui:Label text="♛" class="leader-medal gold"/>
+                        <ui:VisualElement class="leader-details">
+                            <ui:VisualElement class="leader-line">
+                                <ui:Label text="Koeblai Khan"/>
+                                <ui:Label text="50%"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="leader-track">
+                                <ui:VisualElement class="leader-bar" style="width: 50%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="leader-row">
+                        <ui:Label text="♛" class="leader-medal silver"/>
+                        <ui:VisualElement class="leader-details">
+                            <ui:VisualElement class="leader-line">
+                                <ui:Label text="Dzjengis Khan"/>
+                                <ui:Label text="35%"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="leader-track">
+                                <ui:VisualElement class="leader-bar" style="width: 35%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="leader-row">
+                        <ui:Label text="♛" class="leader-medal bronze"/>
+                        <ui:VisualElement class="leader-details">
+                            <ui:VisualElement class="leader-line">
+                                <ui:Label text="Alexander de Grote"/>
+                                <ui:Label text="22%"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="leader-track">
+                                <ui:VisualElement class="leader-bar" style="width: 22%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="leader-row leader-self">
+                        <ui:Label text="♙" class="leader-medal self"/>
+                        <ui:VisualElement class="leader-details">
+                            <ui:VisualElement class="leader-line">
+                                <ui:Label text="Jij"/>
+                                <ui:Label name="leader-self-value" text="0%"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="leader-track">
+                                <ui:VisualElement name="leader-self-fill" class="leader-bar"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="leader-row">
+                        <ui:Label text="5" class="leader-medal muted"/>
+                        <ui:VisualElement class="leader-details">
+                            <ui:VisualElement class="leader-line">
+                                <ui:Label text="Napoleon Bonaparte"/>
+                                <ui:Label text="12%"/>
+                            </ui:VisualElement>
+                            <ui:VisualElement class="leader-track">
+                                <ui:VisualElement class="leader-bar" style="width: 12%;"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="Voorbeeldmijlpalen voor de demonstratie" class="leader-footnote"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

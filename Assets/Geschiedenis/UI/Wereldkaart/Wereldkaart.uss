@@ -1,0 +1,45 @@
+/* Unity UI Toolkit / USS */
+.app { flex-direction: row; flex-grow: 1; background-color: #f3f7fc; color: #20314b; }
+.sidebar { width: 205px; background-color: #173a70; padding: 22px 14px; }
+.brand { color: #ffffff; font-size: 19px; -unity-font-style: bold; margin-bottom: 36px; }
+.nav-item { color: #c7d7ee; font-size: 14px; padding: 12px 10px; margin-bottom: 5px; border-radius: 8px; }
+.nav-active { background-color: #315b94; color: #ffffff; }
+.sidebar-fill { flex-grow: 1; }
+.subject { color: #ffffff; font-size: 13px; padding: 12px 5px; }
+.main { flex-grow: 1; padding: 24px; }
+.header { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 19px; }
+.page-title { font-size: 27px; -unity-font-style: bold; color: #183a6b; }
+.subtitle { color: #647994; font-size: 12px; margin-top: 5px; }
+.header-tag { background-color: #e3ecfa; color: #3568a4; padding: 9px 13px; border-radius: 20px; font-size: 11px; }
+.stats { flex-direction: row; margin-bottom: 16px; }
+.stat { flex-grow: 1; background-color: #ffffff; border-radius: 12px; border-width: 1px; border-color: #e2eaf3; padding: 16px; margin-right: 12px; min-height: 103px; }
+.stat-caption { font-size: 10px; color: #6e86a3; -unity-font-style: bold; letter-spacing: 1px; }
+.stat-value { font-size: 25px; -unity-font-style: bold; color: #173e78; margin-top: 8px; }
+.stat-value-small { font-size: 15px; -unity-font-style: bold; color: #173e78; margin-top: 11px; }
+.stat-hint { color: #8b9cb0; font-size: 10px; margin-top: 8px; }
+.progress-track { height: 7px; background-color: #e7eef8; border-radius: 4px; margin-top: 9px; }
+.progress-fill { width: 0%; height: 100%; background-color: #3578d6; border-radius: 4px; }
+.workspace { flex-direction: row; min-height: 430px; }
+.map-card { flex-grow: 1; background-color: #ffffff; border-radius: 12px; border-width: 1px; border-color: #e2eaf3; padding: 17px; margin-right: 14px; }
+.section-head { flex-direction: row; justify-content: space-between; align-items: center; }
+.section-title { color: #213e68; font-size: 16px; -unity-font-style: bold; }
+.small-muted { color: #8498b0; font-size: 11px; }
+.map-wrap { flex-grow: 1; justify-content: center; align-items: center; background-color: #eaf3ff; border-radius: 10px; margin-top: 14px; overflow: hidden; }
+.world-map { width: 100%; height: 100%; background-image: url('Wereldkaart.png'); -unity-background-scale-mode: scale-to-fit; }
+.legend { flex-direction: row; margin-top: 13px; }
+.legend-item { flex-direction: row; align-items: center; margin-right: 20px; font-size: 11px; color: #677e9b; }
+.dot { width: 11px; height: 11px; border-radius: 3px; margin-right: 7px; }
+.locked { background-color: #b8d1e7; }.conquered { background-color: #3779d4; }
+.map-note { color: #91a1b5; font-size: 10px; margin-top: 10px; }
+.right-column { width: 275px; }
+.region-card { flex-grow: 1; background-color: #ffffff; border-radius: 12px; border-width: 1px; border-color: #e2eaf3; padding: 15px; margin-bottom: 12px; max-height: 325px; }
+.region-list { margin-top: 10px; flex-grow: 1; }
+.region-button { background-color: #f4f8fe; color: #36516e; border-width: 1px; border-color: #e2ebf6; border-radius: 7px; margin-bottom: 5px; padding: 9px 11px; font-size: 12px; -unity-text-align: middle-left; }
+.region-button:hover { background-color: #e6f0fd; }
+.region-button-active { background-color: #dcecff; border-color: #7aa8e5; color: #174b90; }
+.detail-card { background-color: #ffffff; border-radius: 12px; border-width: 1px; border-color: #e2eaf3; padding: 15px; min-height: 172px; }
+.detail-title { color: #1c4277; font-size: 18px; -unity-font-style: bold; margin-top: 9px; }
+.detail-desc { color: #748aa4; font-size: 11px; white-space: normal; margin-top: 7px; margin-bottom: 13px; }
+.start-button { background-color: #397cdb; color: #ffffff; border-width: 0px; border-radius: 7px; height: 37px; -unity-font-style: bold; }
+.leaderboard { background-color: #ffffff; border-width: 1px; border-color: #e2eaf3; border-radius: 12px; margin-top: 14px; padding: 16px; }
+.leaderboard .small-muted { margin-top: 6px; }

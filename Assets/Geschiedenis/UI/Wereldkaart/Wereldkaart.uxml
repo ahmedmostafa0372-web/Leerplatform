@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="Wereldkaart.uss" />
+    <ui:VisualElement name="app" class="app">
+        <ui:VisualElement class="sidebar">
+            <ui:Label text="▣  LeerPlatform" class="brand" />
+            <ui:Label text="⌂  Home" class="nav-item" />
+            <ui:Label text="✎  Oefenen" class="nav-item nav-active" />
+            <ui:Label text="▥  Voortgang" class="nav-item" />
+            <ui:Label text="▤  Vakken" class="nav-item" />
+            <ui:VisualElement class="sidebar-fill" />
+            <ui:Label text="▤  Geschiedenis  ▾" class="subject" />
+        </ui:VisualElement>
+        <ui:VisualElement class="main">
+            <ui:VisualElement class="header">
+                <ui:VisualElement><ui:Label text="Verover de Wereld" class="page-title"/><ui:Label text="Ontdek geschiedenis, beantwoord vragen en verover de wereld." class="subtitle"/></ui:VisualElement>
+                <ui:Label text="GESCHIEDENIS" class="header-tag" />
+            </ui:VisualElement>
+            <ui:VisualElement class="stats">
+                <ui:VisualElement class="stat"><ui:Label text="WERELD VEROVERD" class="stat-caption"/><ui:Label name="conquered-percent" text="0%" class="stat-value"/><ui:VisualElement class="progress-track"><ui:VisualElement name="progress-fill" class="progress-fill"/></ui:VisualElement></ui:VisualElement>
+                <ui:VisualElement class="stat"><ui:Label text="GEBIEDEN VEROVERD" class="stat-caption"/><ui:Label name="conquered-count" text="0 / 15" class="stat-value"/><ui:Label text="Verover gebieden door vragen te beantwoorden" class="stat-hint"/></ui:VisualElement>
+                <ui:VisualElement class="stat"><ui:Label text="VOLGENDE MIJLPAAL" class="stat-caption"/><ui:Label text="Historische veroveraars" class="stat-value-small"/><ui:Label text="Vergelijk jouw voortgang" class="stat-hint"/></ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="workspace">
+                <ui:VisualElement class="map-card">
+                    <ui:VisualElement class="section-head"><ui:Label text="Wereldkaart" class="section-title"/><ui:Label text="Kies een gebied in de lijst rechts" class="small-muted"/></ui:VisualElement>
+                    <ui:VisualElement class="map-wrap"><ui:VisualElement name="world-map" class="world-map"/></ui:VisualElement>
+                    <ui:VisualElement class="legend"><ui:VisualElement class="legend-item"><ui:VisualElement class="dot locked"/><ui:Label text="Nog te veroveren"/></ui:VisualElement><ui:VisualElement class="legend-item"><ui:VisualElement class="dot conquered"/><ui:Label text="Veroverd"/></ui:VisualElement></ui:VisualElement>
+                    <ui:Label text="De kaart is een visueel overzicht. De regio's worden voorlopig via de lijst geselecteerd." class="map-note" />
+                </ui:VisualElement>
+                <ui:VisualElement class="right-column">
+                    <ui:VisualElement class="region-card"><ui:Label text="15 VEROVERBARE GEBIEDEN" class="stat-caption"/><ui:ScrollView name="region-list" class="region-list"/></ui:VisualElement>
+                    <ui:VisualElement class="detail-card"><ui:Label text="GESELECTEERD GEBIED" class="stat-caption"/><ui:Label name="region-title" text="Selecteer een gebied" class="detail-title"/><ui:Label name="region-description" text="Kies rechtsboven een regio om de bijbehorende historische vraag te ontdekken." class="detail-desc"/><ui:Button name="start-question" text="Start de vraag  →" class="start-button"/></ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="leaderboard"><ui:Label text="Historische veroveraars" class="section-title"/><ui:Label text="Mijlpalen en vergelijking worden later gekoppeld aan de voortgangsgegevens." class="small-muted"/></ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
