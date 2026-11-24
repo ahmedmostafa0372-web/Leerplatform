@@ -5,8 +5,23 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Geschiedenis/Scenes/Wereldkaart.unity
+    guid: fed09a5ff6064bc49b310307f121f37b
+  - enabled: 1
+    path: Assets/Geschiedenis/Scenes/VraagMiddenEuropa.unity
+    guid: 2d6885fbca73f5e45aa31e8c0247f5be
+  - enabled: 1
+    path: Assets/Geschiedenis/Scenes/VraagDuitsland.unity
+    guid: eacd9fff2bbd3a04a803764bcdbb7b3e
+  - enabled: 1
+    path: Assets/Geschiedenis/Scenes/VraagNoordAmerika.unity
+    guid: 8ef5d079595391140b3f353df21492ea
+  - enabled: 1
+    path: Assets/Geschiedenis/Scenes/VraagMiddenOosten.unity
+    guid: 9d5d8a7563511614d9843b55cad1f00c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

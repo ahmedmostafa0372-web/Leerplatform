@@ -1,0 +1,159 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+  <Style src="project://database/Assets/Geschiedenis/UI/Geschiedenis.uss?fileID=7433441132597879392&amp;guid=4d9aa520c5028a84ba6e0e52abfaa3df&amp;type=3#Geschiedenis" />
+  <ui:VisualElement name="app" class="app">
+    <ui:VisualElement name="sidebar" class="sidebar">
+      <ui:Label text="▣  LeerPlatform" class="brand" />
+      <ui:VisualElement class="nav-list">
+        <ui:Label text="⌂  Home" class="nav-item" />
+        <ui:Label text="✎  Oefenen" class="nav-item nav-active" />
+        <ui:Label text="▥  Voortgang" class="nav-item" />
+        <ui:Label text="▤  Vakken" class="nav-item" />
+      </ui:VisualElement>
+      <ui:Label text="▤  Geschiedenis  ▾" class="subject" />
+    </ui:VisualElement>
+    <ui:VisualElement class="main">
+      <ui:VisualElement class="topbar">
+        <ui:Button name="sidebar-toggle" text="☰" class="icon-button" />
+        <ui:VisualElement class="stepper">
+          <ui:VisualElement class="step">
+            <ui:Label name="step-1-circle" text="1" class="step-circle current" />
+            <ui:Label text="Bron verkennen" class="step-label" />
+          </ui:VisualElement>
+          <ui:VisualElement class="step-line" />
+          <ui:VisualElement class="step">
+            <ui:Label name="step-2-circle" text="2" class="step-circle" />
+            <ui:Label text="Selecteren" class="step-label" />
+          </ui:VisualElement>
+          <ui:VisualElement class="step-line" />
+          <ui:VisualElement class="step">
+            <ui:Label name="step-3-circle" text="3" class="step-circle" />
+            <ui:Label text="Antwoord" class="step-label" />
+          </ui:VisualElement>
+          <ui:VisualElement class="step-line" />
+          <ui:VisualElement class="step">
+            <ui:Label name="step-4-circle" text="4" class="step-circle" />
+            <ui:Label text="Feedback" class="step-label" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-source" class="screen">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Ontdek de bron" class="page-title" />
+          <ui:Label text="Lees de context en bekijk de bron zorgvuldig." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="source-layout">
+          <ui:VisualElement class="context-card card">
+            <ui:Label text="▤  Historische context" class="card-title" />
+            <ui:Label name="historical-context" text="Tot 1948 stond Palestina onder Brits bestuur. Zowel onder de Joodse als onder de Arabische bevolking bestond het streven naar nationale zelfstandigheid in dit gebied.&#10;&#10;In 1947 stelden de Verenigde Naties voor om het gebied te verdelen in een Joodse en een Arabische staat. De Joodse leiding accepteerde dit voorstel, maar de Arabische leiding wees het af.&#10;&#10;In 1948 werd de staat Israël opgericht. Vervolgens brak een oorlog uit tussen Israël en verschillende Arabische landen. Tijdens deze oorlog vluchtten veel Palestijnen of werden zij uit hun woongebieden verdreven. De voorgestelde Arabische staat werd destijds niet opgericht.&#10;&#10;In de daaropvolgende decennia vonden verschillende oorlogen, vredesonderhandelingen en politieke conflicten plaats. De zeggenschap over het grondgebied, de veiligheid van Israël, de positie van Palestijnse vluchtelingen en het recht op Palestijnse zelfbeschikking bleven belangrijke onderdelen van het conflict.&#10;&#10;Over de oorzaken van het conflict en mogelijke oplossingen bestaan verschillende politieke standpunten. Deze worden onder andere via politieke spotprenten gecommuniceerd." class="body-text" />
+          </ui:VisualElement>
+          <ui:VisualElement class="source-column">
+            <ui:ScrollView name="source-container" mode="Vertical" class="source-card card">
+              <ui:VisualElement name="source-items">
+                <ui:Label name="source-poster-number" text="Bron 1 — The Palestinian Problem..." class="card-title" />
+                <ui:Image name="source-poster" scale-mode="ScaleToFit" style="height: 360px; width: 100%; flex-shrink: 0;" />
+              </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:VisualElement class="description-card card" style="max-height: 220px;">
+              <ui:Label text="▤" class="description-icon" />
+              <ui:ScrollView mode="Vertical" style="flex-grow: 1;">
+                <ui:Label text="Bronbeschrijving" class="description-title" />
+                <ui:Label style="white-space: normal;" name="source-description" text="Politieke spotprent — The Palestinian Problem...&#10;Jaar, land van herkomst, maker en uitgever: onbekend of niet vastgesteld.&#10;&#10;Vertalingen:&#10;The Palestinian Problem... — Het Palestijnse probleem...&#10;YOU&#x27;RE SITTING IN MY CHAIR. — Je zit op mijn stoel.&#10;ISRAEL — Israël&#10;Morocco — Marokko; Tunisia — Tunesië; Algeria — Algerije; Libya — Libië; Iraq — Irak; Saudi Arabia — Saoedi-Arabië; Kuwait — Koeweit; Egypt — Egypte; Lebanon — Libanon; Syria — Syrië; Jordan — Jordanië." class="description-text" />
+              </ui:ScrollView>
+            </ui:VisualElement>
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:VisualElement class="footer-spacer" />
+          <ui:Button name="next-source" text="Ga verder  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-observations" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Jouw observaties" class="page-title" />
+          <ui:Label text="Wat valt je op aan deze bron? Schrijf op wat je ziet, denkt of opmerkt. Druk op Enter om een nieuwe observatie toe te voegen." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="work-layout">
+          <ui:ScrollView name="observation-source-container" mode="Vertical" class="preview-card card">
+            <ui:VisualElement name="observation-source-items">
+              <ui:Label name="observation-poster-number" text="Bron 1 — The Palestinian Problem..." class="card-title" />
+              <ui:Image name="observation-poster" scale-mode="ScaleToFit" style="height: 360px; width: 100%; flex-shrink: 0;" />
+              <ui:Label name="observation-poster-caption" text="Politieke spotprent — The Palestinian Problem...&#10;Jaar, land van herkomst, maker en uitgever: onbekend of niet vastgesteld.&#10;&#10;Vertalingen:&#10;The Palestinian Problem... — Het Palestijnse probleem...&#10;YOU&#x27;RE SITTING IN MY CHAIR. — Je zit op mijn stoel.&#10;ISRAEL — Israël&#10;Morocco — Marokko; Tunisia — Tunesië; Algeria — Algerije; Libya — Libië; Iraq — Irak; Saudi Arabia — Saoedi-Arabië; Kuwait — Koeweit; Egypt — Egypte; Lebanon — Libanon; Syria — Syrië; Jordan — Jordanië." class="body-text" style="white-space: normal; margin-top: 8px;" />
+            </ui:VisualElement>
+          </ui:ScrollView>
+          <ui:VisualElement class="work-column">
+            <ui:VisualElement class="input-row">
+              <ui:TextField name="observation-input" class="observation-input" />
+              <ui:Button name="add-observation" text="+" class="primary-button add-button" />
+            </ui:VisualElement>
+            <ui:ScrollView name="observations-list" mode="Vertical" class="observation-list" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Label text="Enter = nieuwe observatie" class="hint" />
+          <ui:Button name="next-observations" text="Vraag ontdekken  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-select" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="De historische vraag" class="page-title" />
+          <ui:Label text="Selecteer de observaties die je wilt gebruiken voor je antwoord." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="work-layout">
+          <ui:ScrollView name="select-source-container" mode="Vertical" class="preview-card card">
+            <ui:VisualElement name="select-source-items">
+              <ui:Label name="select-poster-number" text="Bron 1 — The Palestinian Problem..." class="card-title" />
+              <ui:Image name="select-poster" scale-mode="ScaleToFit" style="height: 360px; width: 100%; flex-shrink: 0;" />
+              <ui:Label name="select-poster-caption" text="Politieke spotprent — The Palestinian Problem...&#10;Jaar, land van herkomst, maker en uitgever: onbekend of niet vastgesteld.&#10;&#10;Vertalingen:&#10;The Palestinian Problem... — Het Palestijnse probleem...&#10;YOU&#x27;RE SITTING IN MY CHAIR. — Je zit op mijn stoel.&#10;ISRAEL — Israël&#10;Morocco — Marokko; Tunisia — Tunesië; Algeria — Algerije; Libya — Libië; Iraq — Irak; Saudi Arabia — Saoedi-Arabië; Kuwait — Koeweit; Egypt — Egypte; Lebanon — Libanon; Syria — Syrië; Jordan — Jordanië." class="body-text" style="white-space: normal; margin-top: 8px;" />
+            </ui:VisualElement>
+          </ui:ScrollView>
+          <ui:VisualElement class="work-column">
+            <ui:VisualElement class="question-card card">
+              <ui:Label text="Vraag" class="card-title" />
+              <ui:Label name="history-question" text="Gebruik bron 1.&#10;&#10;De tekenaar geeft in deze spotprent zijn mening over het Israëlisch-Palestijnse conflict.&#10;&#10;Welke boodschap probeert de tekenaar met deze spotprent over te brengen?&#10;&#10;Leg je antwoord uit aan de hand van minstens twee verschillende elementen uit de bron." class="question-text" />
+            </ui:VisualElement>
+            <ui:Label text="Jouw observaties (kies er meerdere)" class="card-title" />
+            <ui:ScrollView name="selection-list" mode="Vertical" class="observation-list" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Button name="back-select" text="←  Vorige" class="text-button" />
+          <ui:Button name="next-select" text="Antwoord formuleren  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-answer" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Geef je antwoord" class="page-title" />
+          <ui:Label text="Gebruik de gekozen observaties en de historische context. Formuleer een onderbouwd antwoord op de vraag." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="work-layout">
+          <ui:VisualElement class="selected-card card">
+            <ui:Label text="Gekozen observaties" class="card-title" />
+            <ui:ScrollView name="chosen-list" mode="Vertical" />
+          </ui:VisualElement>
+          <ui:VisualElement class="work-column">
+            <ui:TextField name="answer-input" multiline="true" class="answer-input" />
+            <ui:Label text="Schrijf hier je antwoord." class="hint" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Button name="back-answer" text="←  Vorige" class="text-button" />
+          <ui:Button name="submit-answer" text="Inleveren  ✓" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-feedback" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Feedback" class="page-title" />
+          <ui:Label text="Bekijk de beoordeling van je antwoord." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="card feedback-card">
+          <ui:Label name="feedback-status" text="Beoordeling volgt" class="card-title" />
+          <ui:Label name="feedback-text" text="Hier komt de feedback van Falco's LLM. Voorlopig is dit een placeholder." class="body-text" />
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Button name="back-feedback" text="←  Antwoord aanpassen" class="text-button" />
+          <ui:Button name="retry-button" text="Opnieuw proberen  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

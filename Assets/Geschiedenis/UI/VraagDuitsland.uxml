@@ -1,0 +1,171 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+  <Style src="project://database/Assets/Geschiedenis/UI/Geschiedenis.uss?fileID=7433441132597879392&amp;guid=4d9aa520c5028a84ba6e0e52abfaa3df&amp;type=3#Geschiedenis" />
+  <ui:VisualElement name="app" class="app">
+    <ui:VisualElement name="sidebar" class="sidebar">
+      <ui:Label text="▣  LeerPlatform" class="brand" />
+      <ui:VisualElement class="nav-list">
+        <ui:Label text="⌂  Home" class="nav-item" />
+        <ui:Label text="✎  Oefenen" class="nav-item nav-active" />
+        <ui:Label text="▥  Voortgang" class="nav-item" />
+        <ui:Label text="▤  Vakken" class="nav-item" />
+      </ui:VisualElement>
+      <ui:Label text="▤  Geschiedenis  ▾" class="subject" />
+    </ui:VisualElement>
+    <ui:VisualElement class="main">
+      <ui:VisualElement class="topbar">
+        <ui:Button name="sidebar-toggle" text="☰" class="icon-button" />
+        <ui:VisualElement class="stepper">
+          <ui:VisualElement class="step">
+            <ui:Label name="step-1-circle" text="1" class="step-circle current" />
+            <ui:Label text="Bron verkennen" class="step-label" />
+          </ui:VisualElement>
+          <ui:VisualElement class="step-line" />
+          <ui:VisualElement class="step">
+            <ui:Label name="step-2-circle" text="2" class="step-circle" />
+            <ui:Label text="Selecteren" class="step-label" />
+          </ui:VisualElement>
+          <ui:VisualElement class="step-line" />
+          <ui:VisualElement class="step">
+            <ui:Label name="step-3-circle" text="3" class="step-circle" />
+            <ui:Label text="Antwoord" class="step-label" />
+          </ui:VisualElement>
+          <ui:VisualElement class="step-line" />
+          <ui:VisualElement class="step">
+            <ui:Label name="step-4-circle" text="4" class="step-circle" />
+            <ui:Label text="Feedback" class="step-label" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-source" class="screen">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Ontdek de bron" class="page-title" />
+          <ui:Label text="Lees de context en bekijk de bron zorgvuldig." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="source-layout">
+          <ui:VisualElement class="context-card card">
+            <ui:Label text="▤  Historische context" class="card-title" />
+            <ui:Label name="historical-context" text="In 1932 verkeerde Duitsland in een economische en politieke crisis. Door de wereldwijde economische crisis waren miljoenen Duitsers werkloos geworden. Veel mensen hadden weinig vertrouwen in de regering van de Weimarrepubliek, de democratische staat die Duitsland sinds 1918 bestuurde.&#10;&#10;Verschillende politieke partijen probeerden kiezers ervan te overtuigen dat zij Duitsland uit de crisis konden helpen. Een daarvan was de NSDAP, de nationaalsocialistische partij onder leiding van Adolf Hitler.&#10;&#10;Tijdens verkiezingscampagnes gebruikten politieke partijen posters om kiezers te overtuigen. Met afbeeldingen, slogans en symbolen probeerden zij een bepaalde boodschap over te brengen." class="body-text" />
+          </ui:VisualElement>
+          <ui:VisualElement class="source-column">
+            <ui:ScrollView name="source-container" mode="Vertical" class="source-card card">
+              <ui:VisualElement name="source-items">
+                <ui:Label name="source-poster-number" text="Bron 1 van 3" class="card-title" />
+                <ui:Image name="source-poster" scale-mode="ScaleToFit" style="height: 360px; width: 100%;" />
+                <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-top: 8px;">
+                  <ui:Button name="source-poster-prev" text="← Vorige bron" class="text-button" />
+                  <ui:Button name="source-poster-next" text="Volgende bron →" class="text-button" />
+                </ui:VisualElement>
+              </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:VisualElement class="description-card card">
+              <ui:Label text="▤" class="description-icon" />
+              <ui:VisualElement>
+                <ui:Label text="Bronbeschrijving" class="description-title" />
+                <ui:Label name="source-description" text="Verkiezingsposter, Duitsland, 1932." class="description-text" />
+              </ui:VisualElement>
+            </ui:VisualElement>
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:VisualElement class="footer-spacer" />
+          <ui:Button name="next-source" text="Ga verder  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-observations" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Jouw observaties" class="page-title" />
+          <ui:Label text="Wat valt je op aan deze bron? Schrijf op wat je ziet, denkt of opmerkt. Druk op Enter om een nieuwe observatie toe te voegen." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="work-layout">
+          <ui:ScrollView name="observation-source-container" mode="Vertical" class="preview-card card">
+            <ui:VisualElement name="observation-source-items">
+              <ui:Label name="observation-poster-number" text="Bron 1 van 3" class="card-title" />
+              <ui:Image name="observation-poster" scale-mode="ScaleToFit" style="height: 360px; width: 100%;" />
+              <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-top: 8px;">
+                <ui:Button name="observation-poster-prev" text="← Vorige bron" class="text-button" />
+                <ui:Button name="observation-poster-next" text="Volgende bron →" class="text-button" />
+              </ui:VisualElement>
+              <ui:Label name="observation-poster-caption" class="body-text" style="white-space: normal; margin-top: 8px;" />
+            </ui:VisualElement>
+          </ui:ScrollView>
+          <ui:VisualElement class="work-column">
+            <ui:VisualElement class="input-row">
+              <ui:TextField name="observation-input" class="observation-input" />
+              <ui:Button name="add-observation" text="+" class="primary-button add-button" />
+            </ui:VisualElement>
+            <ui:ScrollView name="observations-list" mode="Vertical" class="observation-list" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Label text="Enter = nieuwe observatie" class="hint" />
+          <ui:Button name="next-observations" text="Vraag ontdekken  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-select" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="De historische vraag" class="page-title" />
+          <ui:Label text="Selecteer de observaties die je wilt gebruiken voor je antwoord." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="work-layout">
+          <ui:ScrollView name="select-source-container" mode="Vertical" class="preview-card card">
+            <ui:VisualElement name="select-source-items">
+              <ui:Label name="select-poster-number" text="Bron 1 van 3" class="card-title" />
+              <ui:Image name="select-poster" scale-mode="ScaleToFit" style="height: 360px; width: 100%;" />
+              <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-top: 8px;">
+                <ui:Button name="select-poster-prev" text="← Vorige bron" class="text-button" />
+                <ui:Button name="select-poster-next" text="Volgende bron →" class="text-button" />
+              </ui:VisualElement>
+              <ui:Label name="select-poster-caption" class="body-text" style="white-space: normal; margin-top: 8px;" />
+            </ui:VisualElement>
+          </ui:ScrollView>
+          <ui:VisualElement class="work-column">
+            <ui:VisualElement class="question-card card">
+              <ui:Label text="Vraag" class="card-title" />
+              <ui:Label name="history-question" text="Gebruik de drie verkiezingsposters uit 1932.&#10;In 1932 groeide de steun voor Hitler en de NSDAP.&#10;Leg uit hoe de omstandigheden in Duitsland in 1932 bijdroegen aan de aantrekkingskracht van Hitler en de NSDAP.&#10;&#10;Betrek in je antwoord:&#10;• de economische en politieke situatie in Duitsland;&#10;• hoe Hitler en de NSDAP op de posters worden gepresenteerd (verwijs tenminste naar 2 van de 3 posters);&#10;• waarom deze boodschap voor sommige Duitse kiezers aantrekkelijk kon zijn." class="question-text" />
+            </ui:VisualElement>
+            <ui:Label text="Jouw observaties (kies er meerdere)" class="card-title" />
+            <ui:ScrollView name="selection-list" mode="Vertical" class="observation-list" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Button name="back-select" text="←  Vorige" class="text-button" />
+          <ui:Button name="next-select" text="Antwoord formuleren  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-answer" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Geef je antwoord" class="page-title" />
+          <ui:Label text="Gebruik de gekozen observaties en de historische context. Formuleer een onderbouwd antwoord op de vraag." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="work-layout">
+          <ui:VisualElement class="selected-card card">
+            <ui:Label text="Gekozen observaties" class="card-title" />
+            <ui:ScrollView name="chosen-list" mode="Vertical" />
+          </ui:VisualElement>
+          <ui:VisualElement class="work-column">
+            <ui:TextField name="answer-input" multiline="true" class="answer-input" />
+            <ui:Label text="Schrijf hier je antwoord." class="hint" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Button name="back-answer" text="←  Vorige" class="text-button" />
+          <ui:Button name="submit-answer" text="Inleveren  ✓" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement name="screen-feedback" class="screen hidden">
+        <ui:VisualElement class="heading">
+          <ui:Label text="Feedback" class="page-title" />
+          <ui:Label text="Bekijk de beoordeling van je antwoord." class="page-subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement class="card feedback-card">
+          <ui:Label name="feedback-status" text="Beoordeling volgt" class="card-title" />
+          <ui:Label name="feedback-text" text="Hier komt de feedback van Falco's LLM. Voorlopig is dit een placeholder." class="body-text" />
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+          <ui:Button name="back-feedback" text="←  Antwoord aanpassen" class="text-button" />
+          <ui:Button name="retry-button" text="Opnieuw proberen  →" class="primary-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>
